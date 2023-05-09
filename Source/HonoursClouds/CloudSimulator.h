@@ -121,6 +121,12 @@ public:
 	
 	UFUNCTION(BlueprintCallable)
 	void HalfandHalf(int iteration_start);
+
+	UPROPERTY(BlueprintReadWrite)
+	int currentHalf;
+
+	UFUNCTION(BlueprintCallable)
+	void DifferentDensities(int iteration_start);
 	
 	UPROPERTY(BlueprintReadWrite)
 	int cameraID; //0=default, 1=cloud camera, 2=texture camera

@@ -117,6 +117,15 @@ void ACloudSimulator::Tick(float DeltaTime)
 			update_timer = 0;
 			ResetSim();
 		}
+		//if player presses C key switch to different densities testing
+		if(PlayerController->IsInputKeyDown(EKeys::C))
+		{
+			sim_type = 2;
+			per_length = update_length / (x_sim_size * y_sim_size * z_sim_size * 2);
+			currentStage = EStage::Test;
+			update_timer = 0;
+			ResetSim();
+		}
 	}
 	
 	//if timer has reached the time step, reset the simulation and return from the function
@@ -181,6 +190,14 @@ void ACloudSimulator::Tick(float DeltaTime)
 		if(currentStage != EStage::Texture)
 		{
 		    HalfandHalf(iteration_num);
+		}
+		break;
+
+	case(2):
+		//do not call testing function while writing to texture
+		if(currentStage != EStage::Texture)
+		{
+			DifferentDensities(iteration_num);
 		}
 		break;
 	}
@@ -267,15 +284,167 @@ void ACloudSimulator::HalfandHalf(int iteration_start)
 	
 	while(iteration_num <= (iteration_start + iteration_length))
 	{
-		if(current_x > (x_sim_size / 2))
+		switch(currentHalf)
 		{
-			cloud_lattice[current_x][current_y][current_z].water_droplets = 1;
-		}
-		else
-		{
-			cloud_lattice[current_x][current_y][current_z].water_droplets = 0;
+			//positive x fiiled
+			case(0):
+				if(current_x > (x_sim_size / 2))
+				{
+					cloud_lattice[current_x][current_y][current_z].water_droplets = 1;
+				}
+				else
+				{
+					cloud_lattice[current_x][current_y][current_z].water_droplets = 0;
+				}
+				break;
+
+			//negative x filled
+			case(1):
+				if(current_x < (x_sim_size / 2))
+				{
+					cloud_lattice[current_x][current_y][current_z].water_droplets = 1;
+				}
+				else
+				{
+					cloud_lattice[current_x][current_y][current_z].water_droplets = 0;
+				}
+				break;
+
+			//positive y filled
+			case(2):
+				if(current_y > (y_sim_size / 2))
+				{
+					cloud_lattice[current_x][current_y][current_z].water_droplets = 1;
+				}
+				else
+				{
+					cloud_lattice[current_x][current_y][current_z].water_droplets = 0;
+				}
+				break;
+
+			//negative y filled
+			case(3):
+				if(current_y < (y_sim_size / 2))
+				{
+					cloud_lattice[current_x][current_y][current_z].water_droplets = 1;
+				}
+				else
+				{
+					cloud_lattice[current_x][current_y][current_z].water_droplets = 0;
+				}
+				break;
+
+			//positive z filled
+			case(4):
+				if(current_z > (z_sim_size / 2))
+				{
+					cloud_lattice[current_x][current_y][current_z].water_droplets = 1;
+				}
+				else
+				{
+					cloud_lattice[current_x][current_y][current_z].water_droplets = 0;
+				}
+				break;
+
+			//negative z filled
+			case(5):
+				if(current_z < (z_sim_size / 2))
+				{
+					cloud_lattice[current_x][current_y][current_z].water_droplets = 1;
+				}
+				else
+				{
+					cloud_lattice[current_x][current_y][current_z].water_droplets = 0;
+				}
+				break;
 		}
 
+		//progress simulation to next step, if simulation stage finished, progress to next stage and return from function
+		if(ProgressSim())
+		{
+			currentStage = EStage::Texture;
+			
+			currentHalf++;
+			if(currentHalf > 5)
+			{
+				currentHalf = 0;
+			}
+			return;
+		}
+	}
+}
+
+//makes each quarter a different density
+void ACloudSimulator::DifferentDensities(int iteration_start)
+{
+	//0, 0.1, 0.25, 0.4, 0.55, 0.7, 0.85, 1
+	while(iteration_num <= (iteration_start + iteration_length))
+	{
+		//-z
+		if(current_z < (z_sim_size / 2))
+		{
+			//-x
+			if(current_x < (x_sim_size / 2))
+			{
+				//-y
+				if(current_y < (y_sim_size / 2))
+				{
+					cloud_lattice[current_x][current_y][current_z].water_droplets = 0;
+				}
+				//+y
+				else
+				{
+					cloud_lattice[current_x][current_y][current_z].water_droplets = 0.1;
+				}
+			}
+			//+x
+			else
+			{
+				//-y
+				if(current_y < (y_sim_size / 2))
+				{
+					cloud_lattice[current_x][current_y][current_z].water_droplets = 0.25;
+				}
+				//+y
+				else
+				{
+					cloud_lattice[current_x][current_y][current_z].water_droplets = 0.4;
+				}
+			}
+		}
+		//+z
+		else
+		{
+			//-x
+			if(current_x < (x_sim_size / 2))
+			{
+				//-y
+				if(current_y < (y_sim_size / 2))
+				{
+					cloud_lattice[current_x][current_y][current_z].water_droplets = 0.55;
+				}
+				//+y
+				else
+				{
+					cloud_lattice[current_x][current_y][current_z].water_droplets = 0.7;
+				}
+			}
+			//+x
+			else
+			{
+				//-y
+				if(current_y < (y_sim_size / 2))
+				{
+					cloud_lattice[current_x][current_y][current_z].water_droplets = 0.85;
+				}
+				//+y
+				else
+				{
+					cloud_lattice[current_x][current_y][current_z].water_droplets = 1;
+				}
+			}
+		}
+		
 		//progress simulation to next step, if simulation stage finished, progress to next stage and return from function
 		if(ProgressSim())
 		{

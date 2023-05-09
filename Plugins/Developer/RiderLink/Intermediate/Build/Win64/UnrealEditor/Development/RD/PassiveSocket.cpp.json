@@ -1,13 +1,13 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "d:\\uni\\year4\\cmp400_honours_project\\honoursclouds\\plugins\\developer\\riderlink\\source\\rd\\thirdparty\\clsocket\\src\\passivesocket.cpp",
+        "Source": "d:\\uni\\year4\\cmp400_honours_project\\honoursclouds\\cmp400_honoursartefact_frasermcginn_1900295\\plugins\\developer\\riderlink\\source\\rd\\thirdparty\\clsocket\\src\\passivesocket.cpp",
         "ProvidedModule": "",
         "Includes": [
-            "d:\\uni\\year4\\cmp400_honours_project\\honoursclouds\\plugins\\developer\\riderlink\\intermediate\\build\\win64\\unrealeditor\\development\\rd\\definitions.h",
-            "d:\\uni\\year4\\cmp400_honours_project\\honoursclouds\\plugins\\developer\\riderlink\\source\\rd\\thirdparty\\clsocket\\src\\passivesocket.h",
-            "d:\\uni\\year4\\cmp400_honours_project\\honoursclouds\\plugins\\developer\\riderlink\\source\\rd\\thirdparty\\clsocket\\src\\activesocket.h",
-            "d:\\uni\\year4\\cmp400_honours_project\\honoursclouds\\plugins\\developer\\riderlink\\source\\rd\\thirdparty\\clsocket\\src\\simplesocket.h",
+            "d:\\uni\\year4\\cmp400_honours_project\\honoursclouds\\cmp400_honoursartefact_frasermcginn_1900295\\plugins\\developer\\riderlink\\intermediate\\build\\win64\\unrealeditor\\development\\rd\\definitions.h",
+            "d:\\uni\\year4\\cmp400_honours_project\\honoursclouds\\cmp400_honoursartefact_frasermcginn_1900295\\plugins\\developer\\riderlink\\source\\rd\\thirdparty\\clsocket\\src\\passivesocket.h",
+            "d:\\uni\\year4\\cmp400_honours_project\\honoursclouds\\cmp400_honoursartefact_frasermcginn_1900295\\plugins\\developer\\riderlink\\source\\rd\\thirdparty\\clsocket\\src\\activesocket.h",
+            "d:\\uni\\year4\\cmp400_honours_project\\honoursclouds\\cmp400_honoursartefact_frasermcginn_1900295\\plugins\\developer\\riderlink\\source\\rd\\thirdparty\\clsocket\\src\\simplesocket.h",
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22000.0\\ucrt\\sys\\stat.h",
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22000.0\\ucrt\\corecrt.h",
             "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.35.32215\\include\\vcruntime.h",
@@ -151,12 +151,12 @@
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22000.0\\um\\ws2tcpip.h",
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22000.0\\shared\\ws2ipdef.h",
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22000.0\\shared\\in6addr.h",
-            "d:\\uni\\year4\\cmp400_honours_project\\honoursclouds\\plugins\\developer\\riderlink\\source\\rd\\thirdparty\\clsocket\\src\\host.h",
+            "d:\\uni\\year4\\cmp400_honours_project\\honoursclouds\\cmp400_honoursartefact_frasermcginn_1900295\\plugins\\developer\\riderlink\\source\\rd\\thirdparty\\clsocket\\src\\host.h",
             "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.35.32215\\include\\cstdint",
             "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.35.32215\\include\\yvals_core.h",
             "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.35.32215\\include\\xkeycheck.h",
             "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.35.32215\\include\\stdint.h",
-            "d:\\uni\\year4\\cmp400_honours_project\\honoursclouds\\plugins\\developer\\riderlink\\source\\rd\\thirdparty\\clsocket\\src\\stattimer.h",
+            "d:\\uni\\year4\\cmp400_honours_project\\honoursclouds\\cmp400_honoursartefact_frasermcginn_1900295\\plugins\\developer\\riderlink\\source\\rd\\thirdparty\\clsocket\\src\\stattimer.h",
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22000.0\\ucrt\\time.h",
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22000.0\\ucrt\\corecrt_wtime.h"
         ],

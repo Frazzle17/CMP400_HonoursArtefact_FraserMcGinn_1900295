@@ -24,7 +24,7 @@ D:\Uni\Year4\CMP400_Honours_Project\HonoursClouds\Plugins\Developer\RiderLink\In
 /I D:\Uni\Year4\CMP400_Honours_Project\HonoursClouds\Plugins\Developer\RiderLink\Source\RD\thirdparty\clsocket\src
 /I D:\Uni\Year4\CMP400_Honours_Project\HonoursClouds\Plugins\Developer\RiderLink\Source\RD\thirdparty\CTPL\include
 /I ThirdParty\mimalloc\include
-/I "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\INCLUDE"
+/I "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\INCLUDE"
 /I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\ucrt"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\shared"

@@ -1,11 +1,11 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "d:\\uni\\year4\\cmp400_honours_project\\honoursclouds\\plugins\\developer\\riderlink\\source\\ridershaderinfo\\ridershaderinfo.cpp",
+        "Source": "d:\\uni\\year4\\cmp400_honours_project\\honoursclouds\\cmp400_honoursartefact_frasermcginn_1900295\\plugins\\developer\\riderlink\\source\\ridershaderinfo\\ridershaderinfo.cpp",
         "ProvidedModule": "",
         "Includes": [
-            "d:\\uni\\year4\\cmp400_honours_project\\honoursclouds\\plugins\\developer\\riderlink\\intermediate\\build\\win64\\unrealeditor\\development\\ridershaderinfo\\definitions.h",
-            "d:\\uni\\year4\\cmp400_honours_project\\honoursclouds\\plugins\\developer\\riderlink\\source\\ridershaderinfo\\ridershaderinfo.h",
+            "d:\\uni\\year4\\cmp400_honours_project\\honoursclouds\\cmp400_honoursartefact_frasermcginn_1900295\\plugins\\developer\\riderlink\\intermediate\\build\\win64\\unrealeditor\\development\\ridershaderinfo\\definitions.h",
+            "d:\\uni\\year4\\cmp400_honours_project\\honoursclouds\\cmp400_honoursartefact_frasermcginn_1900295\\plugins\\developer\\riderlink\\source\\ridershaderinfo\\ridershaderinfo.h",
             "d:\\games\\ue_5.0\\engine\\source\\runtime\\core\\public\\modules\\moduleinterface.h",
             "d:\\games\\ue_5.0\\engine\\source\\runtime\\core\\public\\coretypes.h",
             "d:\\games\\ue_5.0\\engine\\source\\runtime\\core\\public\\hal\\platform.h",

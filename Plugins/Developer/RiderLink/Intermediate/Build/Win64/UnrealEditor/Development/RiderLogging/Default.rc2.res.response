@@ -63,5 +63,5 @@
 /DBUILD_ICON_FILE_NAME="\"..\\Build\\Windows\\Resources\\Default.ico\""
 /DPROJECT_COPYRIGHT_STRING="Fill out your copyright notice in the Description page of Project Settings."
 /DPROJECT_PRODUCT_IDENTIFIER=HonoursClouds
-/fo "D:\Uni\Year4\CMP400_Honours_Project\HonoursClouds\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderLogging\Default.rc2.res"
+/fo "D:\Uni\Year4\CMP400_Honours_Project\HonoursClouds\CMP400_HonoursArtefact_FraserMcGinn_1900295\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RiderLogging\Default.rc2.res"
 "..\Build\Windows\Resources\Default.rc2"
